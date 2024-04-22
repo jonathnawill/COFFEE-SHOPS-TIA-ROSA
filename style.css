@@ -1,0 +1,106 @@
+/* Variável para cor principal */
+:root {
+  --main-color: #FF5733;
+}
+
+/* Estilo para o corpo do site */
+body {
+  background-image: url('img/imagemDeCafe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para a jumbotron */
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative; 
+}
+
+.jumbotron a.btn-primary {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+
+
+/* Estilos responsivos para dispositivos móveis */
+@media only screen and (max-width: 1080px) {
+  .jumbotron {
+    height: 200px;
+    text-align: center;
+    overflow: auto;
+  }
+  
+  .jumbotron h1 {
+    font-size: 24px;
+    margin-top: 45px;
+  }
+  
+  .jumbotron p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .jumbotron a {
+    margin-top: 20px;
+  }  
+}
+
+
+@media only screen and (min-width: 769px) {
+
+}
+
+/* Estilo para overlay */
+.overlay {
+  height: 35%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Ajustes para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[src='img/CafeComLeite.jpg'],
+img[src='img/Expresso.jpg'],
+img[src='img/CafeGelado.jpg'],
+img[src='img/Expresso con panna.jpg'],
+img[src='img/PaoDeQueijo.jpg'] {
+  height: 300px;
+}
+
+.card img {
+  height: 300px;
+}
+
+
+.card {
+  margin: 10px;
+}
+
+.container {
+  padding: 10px;
+}
+
+.row {
+  margin: 5px 0;
+}
